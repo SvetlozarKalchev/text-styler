@@ -1,0 +1,39 @@
+{
+  "name": "text-styler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "tsx watch src/server.ts",
+    "test": "jest --detectOpenHandles --forceExit --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvetlozarKalchev/text-styler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SvetlozarKalchev/text-styler/issues"
+  },
+  "homepage": "https://github.com/SvetlozarKalchev/text-styler#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "9.21.0",
+    "@jest/globals": "29.7.0",
+    "@types/express": "5.0.0",
+    "@types/jest": "29.5.14",
+    "@types/node": "22.13.5",
+    "eslint": "9.21.0",
+    "jest": "29.7.0",
+    "ts-jest": "29.2.6",
+    "tsx": "4.19.3",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.24.1"
+  },
+  "dependencies": {
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "nanoid": "5.1.2",
+    "redis": "4.7.0"
+  }
+}
