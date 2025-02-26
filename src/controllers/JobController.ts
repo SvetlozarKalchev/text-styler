@@ -39,7 +39,8 @@ export class JobController {
     }
 
     public processJob = async (req: Request, res: Response): Promise<void> => {
-        const { job_id, token } = req.body;
+        const job_id = req.query.job_id as string;
+        const token = req.query.token as string;
 
         if (!job_id || !token || job_id?.length !== 10 || token?.length !== 20) {
             res.status(ERROR_STATUSES.BAD_REQUEST).json({ error: ERROR_MESSAGES.WRONG_JOB_ID_TOKEN });
